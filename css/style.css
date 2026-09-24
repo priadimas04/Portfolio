@@ -1797,6 +1797,31 @@ body {
         color 0.35s ease;
 }
 
+.office-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.office-shape {
+    width: 28px;
+    height: 28px;
+    display: block;
+    position: relative;
+    border: 1px solid currentColor;
+    transform: skewY(-8deg);
+}
+
+.office-shape::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 5px;
+    width: 10px;
+    height: 12px;
+    border-right: 1px solid currentColor;
+}
+
 .skill-card:hover .skill-icon {
     background: var(--gold);
     color: var(--bg);
